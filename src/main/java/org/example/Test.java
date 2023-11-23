@@ -20,10 +20,6 @@ public class Test {
 
         File file3 = new File(currentDirectory, "src/main/resources/words.txt");
         Task3 wordFrequencyCounter = new Task3();
-        Map<String, Integer> wordFrequencyMap = wordFrequencyCounter.countWordFrequency(String.valueOf(file3));
-
-        for (Map.Entry<String, Integer> entry: wordFrequencyMap.entrySet()) {
-            System.out.println(entry.getKey() + " " + entry.getValue());
-        }
+        wordFrequencyCounter.countWordFrequency(String.valueOf(file3));
     }
 }
